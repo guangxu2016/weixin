@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/read/read",
+    "pages/fond/fond",
+    "pages/person/person",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3b4b39",
+    "navigationBarTitleText": "启航巴士",
+    "navigationBarTextStyle":"#3b2b41",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index/index.png",
+        "selectedIconPath": "images/index/index-actived.png"
+      },
+      {
+        "pagePath": "pages/read/read",
+        "text": "借阅",
+        "iconPath": "images/index/read.png",
+        "selectedIconPath": "images/index/read-actived.png"
+      },
+      {
+        "pagePath": "pages/fond/fond",
+        "text": "发现",
+        "iconPath": "images/index/fond.png",
+        "selectedIconPath": "images/index/fond-actived.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我的",
+        "iconPath": "images/index/person.png",
+        "selectedIconPath": "images/index/person-actived.png"
+      }],
+      "position": "buttom"
+    },
+    "debug": "true"
+}

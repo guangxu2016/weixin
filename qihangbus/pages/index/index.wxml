@@ -1,0 +1,114 @@
+<!--index.wxml-->
+<!-- navigator.wxml -->
+<navigator url="../../pages/logs/logs">
+  <view class="click">点击我跳转到下一个页面</view>
+</navigator>
+<!-- <view style="text-align:center"> {{title}} </view>
+<view> 返回 </view>  -->
+
+<!-- 轮播图 -->
+<swiper class="swiper" indicator-dots="{{indicatorDots}}"  current="{{swiperCurrent}}" bindchange="swiperChange" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{movies}}" wx:for-index="index">
+    <swiper-item>
+      <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 四宫格 -->
+<view class="content">
+  <view class="main">
+    <view class="item item1">
+      <image src='../../images/index/attendance.png'></image>
+    </view>
+    <view class="item item2">
+      <image src='../../images/index/news.png'></image>
+    </view>
+    <view class="item item3">
+      <image src='../../images/index/reward.png'></image>
+    </view>
+    <view class="item item4">
+      <image src='../../images/index/buy.png'></image>
+    </view>
+  </view>
+  <!-- 空条 -->
+  <view class='kongge'>
+  </view>
+  <!-- 视频介绍 -->
+  <text class='read'>每周一本电子绘本免费阅读</text>
+  <view class='project'>
+
+     <!-- 视频 -->
+    <video src="http://www.w3school.com.cn//i/movie.mp4" binderror="videoErrorCallback"></video>
+  </view>
+
+ <!-- 空条 -->
+  <view class='kongge1'>
+  </view>
+  <!-- 班级图书 -->
+    <view class='class'>
+    <text class='text1'>班级图书</text>
+    <text class='text2'>查看全部</text>
+  </view>  
+
+  <!-- <div class="flex flex-pack-justify">
+    <div>班级图书</div>
+    <div>查看全部</div>
+</div>  
+   -->
+  <!-- 四本书介绍 -->
+  <view class="main">
+    <view class="mainbook">
+      <image src='../../images/index/2.png'></image>
+    </view>
+    <view class="mainbook">
+      <image src='../../images/index/3.png'></image>
+    </view>
+  </view>
+  <view class="main">
+    <view class="mainbook">
+      <image src='../../images/index/4.png'></image>
+    </view>
+    <view class="mainbook">
+      <image src='../../images/index/5.png'></image>
+    </view>
+  </view>
+  <!-- 空条 -->
+  <view class='kongge'></view>
+  <!-- 预约图书 -->
+  <view class='class'>
+    <text class='text1'>预约图书</text>
+    <text class='text2'>查看全部</text>
+  </view>
+  <!-- 四本书介绍 -->
+  <view class="main">
+    <view class="mainbook">
+      <image src='../../images/index/6.png'></image>
+    </view>
+    <view class="mainbook">
+      <image src='../../images/index/7.png'></image>
+    </view>
+  </view>
+  <view class="main">
+    <view class="mainbook">
+      <image src='../../images/index/8.png'></image>
+    </view>
+    <view class="mainbook">
+      <image src='../../images/index/9.png'></image>
+    </view>
+  </view>
+  <!-- 空条 -->
+  <view class='kongge'></view>
+  <!-- 线下活动标题 -->
+  <view class='word'>线下活动</view>
+   <!-- 线下活动 -->
+  <view class='actived'>
+    <view class='actived-img'>
+      <view class='time1'>2018年1月至2018年3月</view>
+      <image src='../../images/index/banner.png'>
+      </image>
+      <image src='../../images/index/banner2.png'></image>
+      <view class='time2'>2018年1月至2018年3月</view>
+    </view>
+  </view>
+
+</view>
